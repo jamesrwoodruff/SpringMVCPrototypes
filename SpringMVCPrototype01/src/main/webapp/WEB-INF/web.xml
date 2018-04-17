@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+	
+	<display-name>Spring MVC Prototype 01</display-name>
+
+	<!-- DispatcherServlet is declared in web.xml. 
+		 Spring will look for a dispatcher-servlet.xml file. 
+		 If the name of that file is not specified, Spring looks for {servlet-name]-servlet.xml. 
+		 That xml config file defines the beans for the application context.
+		 An applicationContext.xml context can also be used to contain beans shared between all servlets in a webapp. 
+		 But if there is only 1 servlet, it may not be necessary. 
+	-->
+	<servlet>
+		<servlet-name>springmvcprototype01</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+		<!-- (Can optionally specify contextConfigLocation) -->
+		<!-- 
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/springmvcprototype01.xml</param-value>
+		</init-param>
+		 -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>springmvcprototype01</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+</web-app>

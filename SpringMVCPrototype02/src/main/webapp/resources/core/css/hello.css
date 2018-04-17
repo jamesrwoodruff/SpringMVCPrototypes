@@ -1,0 +1,24 @@
+.title-logo-style {
+	float: right;
+	width: 229px;
+	height: 45px;
+	overflow: hidden;
+	text-indent: -999em;
+	background-position: 0 -3px
+}
+
+@media only screen and (max-width:360px) {
+	.title-logo-style {
+		background-position: -239px -14px;
+		height: 32px;
+		width: 166px
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.title-logo-style {
+		float: none;
+		position: absolute;
+		left: 3%
+	}
+}
