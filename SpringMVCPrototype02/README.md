@@ -11,7 +11,7 @@ This Java project uses the Spring MVC framework and includes the following:
 * Uses logback/sl4j for logging
 * Includes rudimentary example test of a controller using JUnit, Mockito and Spring test features such as MockMvc
 
-##Configuration
+## Configuration
 As noted above, this project uses Java to configure DispatcherServlet. Note that HelloWorldInitializer extends 
 **AbstractAnnotationConfigDispatcherServletInitializer**. This will be automatically used to configure DispatcherServlet 
 and the Spring application context in the application's servlet context.
