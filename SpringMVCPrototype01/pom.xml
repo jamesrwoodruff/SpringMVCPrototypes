@@ -11,7 +11,7 @@
   	<description>SpringMVCPrototype01</description>
 
 	<properties>
-		<spring.version>4.2.1.RELEASE</spring.version>
+		<spring.version>[4.3.17,)</spring.version>
 		<jdk.version>1.8</jdk.version>
 	</properties>
 
